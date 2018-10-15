@@ -8,17 +8,18 @@ package ru.job4j.calculate;
 public class Calculate {
 	/**
 	* Конструктор, вывода строки в консоль.
+	*Main.
 	*@param args - args.
 	*/
 	public static void main (String[] args) {
 		System.out.print ("Hello World");
 	}	
 		/**
-		*@param name Alexandr Bulanov
-		*@return Echo plus Alexandr Bulanov
+		*@param name Your name
+		*@return Echo plus your name
 		*/
 		public String echo(String name) {
-			return echo;			
+			return "Echo, echo, echo : " + name;			
 		}		
 	
 }
