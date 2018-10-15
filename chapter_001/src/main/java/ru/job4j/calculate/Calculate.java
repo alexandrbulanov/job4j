@@ -1,5 +1,4 @@
 package ru.job4j.calculate;
-
 /**
 * Class Класс для вычисления арифметических операций + - * / ^.
 *@author Alexandr Bulanov
@@ -7,12 +6,19 @@ package ru.job4j.calculate;
 *@version 0.1
 */
 public class Calculate {
-	
 	/**
 	* Конструктор, вывода строки в консоль.
-	*@param ard - arg.
+	*@param args - args.
 	*/
-	public static void main (String[] args){
+	public static void main (String[] args) {
 		System.out.print ("Hello World");
-	}
+	}	
+		/**
+		*@param name Alexandr Bulanov
+		*@return Echo plus Alexandr Bulanov
+		*/
+		public String echo(String name) {
+			return echo;			
+		}		
+	
 }
