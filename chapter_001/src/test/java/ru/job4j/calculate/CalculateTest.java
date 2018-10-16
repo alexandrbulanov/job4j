@@ -1,27 +1,35 @@
-package ru.job4j.calculate;
+package ru.job4j;
 
 import org.junit.Test;
+import java.io.ByteArrayOutputStream;
+import java.io.PrintStream;
 import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertThat;
 
 /**
-* Test.
-*
-*@author Alexandr Bulanov
-*@since 13.10.2018
-*@version 0.1
-*/
+ *Class  Test.
+ *
+ * @author Alexandr Bulanov
+ * @since 16.10.2018
+ * @version 0.1
+ */
 public class CalculateTest {
-/**
-* Test echo.
-*/
-@Test
-public void whenTakeNameThenTreeEchoPlusName() {
-    String input = "Alexandr Bulanov";
-    String expect = "Echo, echo, echo : Alexandr Bulanov"; 
-    Calculate calc = new Calculate();
-    String result = calc.echo(input);
-    assertThat(result, is(expect));
-}
- 
-}
+    /**
+     * Добавление метода Test.
+     */
+    @Test
+    public void whenAddOneToOneThenTwo() {
+        ByteArrayOutputStream out = new ByteArrayOutputStream();
+        System.setOut(new PrintStream(out));
+        Calculate.main(null);
+        assertThat(out.toString(), is("Hello World\r\n"));
+    }
+
+    @Test
+    public void whenTakeNameThenTreeEchoPlusName() {
+        String input = " Alexandr Bulanov";
+        String expect = "Echo, echo, echo : Alexandr Bulanov";
+        Calculate calculate = new Calculate();
+        String result = calculate.echo(input);
+        assertThat(result, is(expect));
+    }
