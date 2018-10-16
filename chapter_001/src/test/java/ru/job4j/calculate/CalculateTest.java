@@ -1,4 +1,4 @@
-package ru.job4j;
+package ru.job4j.calculate;
 
 import org.junit.Test;
 import java.io.ByteArrayOutputStream;
@@ -33,3 +33,4 @@ public class CalculateTest {
         String result = calculate.echo(input);
         assertThat(result, is(expect));
     }
+}	
