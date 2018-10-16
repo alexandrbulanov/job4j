@@ -18,14 +18,6 @@ public class CalculateTest {
      * Добавление метода Test.
      */
     @Test
-    public void whenAddOneToOneThenTwo() {
-        ByteArrayOutputStream out = new ByteArrayOutputStream();
-        System.setOut(new PrintStream(out));
-        Calculate.main(null);
-        assertThat(out.toString(), is("Hello World\r\n"));
-    }
-
-    @Test
     public void whenTakeNameThenTreeEchoPlusName() {
         String input = " Alexandr Bulanov";
         String expect = "Echo, echo, echo : Alexandr Bulanov";
