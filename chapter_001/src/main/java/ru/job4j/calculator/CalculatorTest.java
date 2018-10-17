@@ -14,7 +14,7 @@ public class CalculatorTest {
         double expected = 2D;
         assertThat(result, is(expected));
     }
-
+    @Test
     public void whenSubOnePlusOneThenTwo() {
         Calculator calc = new Calculator();
         calc.sub(1D, 1D);
@@ -22,7 +22,7 @@ public class CalculatorTest {
         double expected = 2D;
         assertThat(result, is(expected));
     }
-
+    @Test
     public void whenMultOnePlusOneThenTwo() {
         Calculator calc = new Calculator();
         calc.mult(1D, 1D);
@@ -30,7 +30,7 @@ public class CalculatorTest {
         double expected = 2D;
         assertThat(result, is(expected));
     }
-
+    @Test
     public void whenDivOnePlusOneThenTwo() {
         Calculator calc = new Calculator();
         calc.div(1D, 1D);
