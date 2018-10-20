@@ -1,9 +1,9 @@
 package ru.job4j.condition;
 
 /**
- * @author Petr Arsentev (parsentev@yandex.ru)
- * @version $Id$
- * @since 0.1
+ *@author Alexandr Bulanov
+ *@since 19.10.2018
+ *@version 0.1
  */
 public class Point {
    private int x;
