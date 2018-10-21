@@ -10,10 +10,7 @@ public class Converter {
      * @param value рубли.
      * @return Доллары
      */
-    public int rubleToDollar(int value) {
-		
-		return this.value/60;
-    }
+    public int rubleToDollar(int value) { return value/60; }
 
     /**
      * Конвертируем доллары в рубли.
@@ -21,7 +18,7 @@ public class Converter {
      * @return рубли.
      */
     public int dollarToRuble(int value) {
-		return this.value*60;
+		return value*60;
     }
 	
     /**
@@ -30,7 +27,7 @@ public class Converter {
      * @return Евро.
      */
     public int rubleToEuro(int value) {
-		return this.value/70;
+		return value/70;
     }
 	
 	 /**
@@ -39,7 +36,7 @@ public class Converter {
      * @return рубли.
      */
     public int euroToRuble(int value) {
-		return this.value*60;
+		return value*60;
     }
 }
 
@@ -52,32 +49,5 @@ public class Converter {
 1 евро = 70 рублей.
 2. Добавь еще два методы для обратно конвертации евро и долларов в рубли.
 3. Воспользуйтесь тестом.
-
-public class ConverterTest {
-    @Test
-    public void when60RubleToDollarThen1() {
-        Converter converter = new Converter();
-        int result = converter.rubleToDollar(60);
-        assertThat(result, is(1));
-    }
-
-    @Test
-    public void when70RubleToEuroThen1() {
-        Converter converter = new Converter();
-        int result = converter.rubleToEuro(70);
-        assertThat(result, is(1));
-    }
-}
-
-public class Solution {
-        public static void main(String[] args) {
-        System.out.println (convertEurToUsd(30, 0.55));
-        System.out.println (convertEurToUsd(40, 0.55));
-    }
-    public static double convertEurToUsd(int eur, double course) {
-        double dollar = eur * course;
-        return dollar;
-    }
-}
 
 */
