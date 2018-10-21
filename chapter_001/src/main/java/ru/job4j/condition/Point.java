@@ -32,3 +32,4 @@ public class Point {
       System.out.println("Расстояние между точками А и В : " + result);
    }
 }
+
