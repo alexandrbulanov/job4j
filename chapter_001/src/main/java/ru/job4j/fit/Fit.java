@@ -5,15 +5,14 @@ package ru.job4j.fit;
  */
 public class Fit {
 
-    private double height;
-
     /**
      * Идеальный вес для мужщины.
      * @param height Рост.
      * @return идеальный вес.
      */
     public double manWeight(double height) {
-        return height * 1.15;
+
+        return (height - 100) * 1.15;
     }
 
     /**
@@ -22,7 +21,7 @@ public class Fit {
      * @return идеальный вес.
      */
     public double womanWeight(double height) {
-        return height * 1.15;
+        return (height - 110) * 1.15;
     }
 }
 
