@@ -1,35 +1,35 @@
 package ru.job4j.condition;
 
+import java.util.Scanner;
+
 /**
  *@author Alexandr Bulanov
  *@since 19.10.2018
  *@version 0.1
  */
 public class Point {
-   private int x;
-   private int y;
-
-   public Point(int x, int y) {
-      this.x = x;
-      this.y = y;
-   }
-
-   public double distanceTo(Point that) {
-      return Math.sqrt(
-              Math.pow(this.x - that.x, 2) + Math.pow(this.y - that.y, 2));
-   }
+   // переменная для расстояния между точками
+   public static int dis;
 
    public static void main(String[] args) {
-      Point a = new Point(0, 1);
-      Point b = new Point(2, 5);
-      // сделаем вызов метода
-      System.out.println("x1 = " + a.x);
-      System.out.println("y1 = " + a.y);
-      System.out.println("x2 = " + b.x);
-      System.out.println("y2 = " + b.y);
+      System.out.print("X1: ");
+      Scanner keyboard = new Scanner(System.in);
+      int x1 = keyboard.nextInt();
 
-      double result = a.distanceTo(b);
-      System.out.println("Расстояние между точками А и В : " + result);
+      System.out.print("Y1: ");
+      Scanner keyboard1 = new Scanner(System.in);
+      int y1 = keyboard1.nextInt();
+
+      System.out.print("X2: ");
+      Scanner keyboard2 = new Scanner(System.in);
+      int x2 = keyboard2.nextInt();
+
+      System.out.print("Y2: ");
+      Scanner keyboard3 = new Scanner(System.in);
+      int y2 = keyboard3.nextInt();
+
+      //Расчет расстояния
+      dis = (int) Math.sqrt(((x1 - x2) * (x1 - x2) + (y1 - y2) * (y1 - y2)));
+      System.out.println("Расстояние между точками А и В: " + dis);
    }
 }
-
