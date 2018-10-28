@@ -1,7 +1,5 @@
 package ru.job4j.condition;
 
-import java.util.Scanner;
-
 /**
  *@author Alexandr Bulanov
  *@since 19.10.2018
