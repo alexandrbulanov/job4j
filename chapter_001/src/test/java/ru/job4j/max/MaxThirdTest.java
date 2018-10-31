@@ -18,7 +18,7 @@ public class MaxThirdTest {
     @Test
     public void whenFirstLessSecondLessThid() {
         Max maxim = new Max();
-        int result = maxim.max(2, 4, 3);
+        int result = Math.max(2, Math.max(4, 3));
         assertThat(result, is(4));
     }
 }
