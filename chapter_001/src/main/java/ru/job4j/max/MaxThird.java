@@ -14,7 +14,7 @@ public class MaxThird {
      *@param thid - второе число.
      *@return Вывод максимального числа.
      */
-    public int max (int first, int second, int thid){
+    public int max(int first, int second, int thid) {
         return Math.max(first, Math.max(second, thid));
     }
 }
