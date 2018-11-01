@@ -14,9 +14,7 @@ public class Max {
      *@param second - второе число.
      *@return Вывод максимального числа.
      */
-    public int max (int first, int second){
-        //if (first > second) {return first;}
-        //else {return second;}
-        return first > second ? first : second;
+    public int max(int first, int second) {
+      return (first > second ? first : second);
     }
 }
