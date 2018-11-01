@@ -4,6 +4,7 @@ import org.junit.Test;
 
 import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.*;
+import static sun.nio.cs.Surrogate.is;
 
 /**
  *@author Alexandr Bulanov
@@ -16,8 +17,8 @@ public class CounterTest {
      *Сложение.
      */
     @Test
-    public void add(int start, int finish) {
-        Counter сount = new Counter();
+    public void whenThen() {
+        Counter count = new Counter();
         int result = count.add(1, 10);
         assertThat(result, is(30));
     }
