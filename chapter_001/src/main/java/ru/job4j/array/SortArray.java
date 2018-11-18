@@ -14,6 +14,7 @@ import java.util.*;
  */
 
 public class SortArray {
+
     public static boolean masSorted(int[] data, int n) {
         // Нулевое значение или менее двух элементов - сортируется.
         if (data == null || n < 2) {
@@ -27,7 +28,7 @@ public class SortArray {
     }
 
     public static void main(String[] args) {
-        int [] data = {2,3,5};
+        int[] data = {2, 3, 5};
         System.out.println(Arrays.toString(data) + (masSorted(data, data.length) ? " Отсортирован" : " НЕ отсортирован"));
     }
 }

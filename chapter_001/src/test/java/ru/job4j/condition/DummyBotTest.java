@@ -12,27 +12,37 @@ import static org.junit.Assert.assertThat;
 
 public class DummyBotTest {
 
+    /**
+     * Отвечает на вопросы.
+     */
     @Test
     public void whenGreetBot() {
         DummyBot bot = new DummyBot();
         assertThat(
                 bot.answer("Привет, Бот."),
-                is("Привет, умник."));
+                is("Привет, умник.")
+        );
     }
-
+    /**
+     * Отвечает на вопросы.
+     */
     @Test
     public void whenByuBot() {
         DummyBot bot = new DummyBot();
         assertThat(
                 bot.answer("Пока."),
-                is("До скорой встречи."));
+                is("До скорой встречи.")
+        );
     }
-
+    /**
+     * Отвечает на вопросы.
+     */
     @Test
     public void whenUnknownBot() {
         DummyBot bot = new DummyBot();
         assertThat(
                 bot.answer("Сколько будет 2 + 2?"),
-                is("Это ставит меня в тупик. Спросите другой вопрос."));
+                is("Это ставит меня в тупик. Спросите другой вопрос.")
+        );
     }
 }
