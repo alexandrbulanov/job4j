@@ -1,5 +1,5 @@
 package ru.job4j.profession;
 
 public class Patient {
-    short name;
+    private String name;
 }

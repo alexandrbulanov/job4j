@@ -1,6 +1,6 @@
 package ru.job4j.profession;
 
 public class Profession {
-    short profession;
-    short name;
+    private String profession;
+    private String name;
 }
