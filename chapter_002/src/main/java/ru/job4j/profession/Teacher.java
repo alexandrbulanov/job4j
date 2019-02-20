@@ -1,18 +1,18 @@
 package ru.job4j.profession;
 
 /**
- * Class Engineer класс.
+ * Class Teacher класс.
  *
  * author Aleksandr Bulanov (bulanov.alexander@mail.ru).
  * @version $Id$.
  * @since 0.1.
  */
 
-public class Engineer extends Profession {
+public class Teacher {
     /**
-     * Метод строть дом.
+     * метод Учить студента
      */
-    public void build(){
+    public void teach(String student){
+
     }
 }
-
