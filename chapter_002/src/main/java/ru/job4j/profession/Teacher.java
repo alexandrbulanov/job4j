@@ -8,11 +8,13 @@ package ru.job4j.profession;
  * @since 0.1.
  */
 
-public class Teacher {
-    /**
-     * метод Учить студента
-     */
-    public void teach(String student){
+public class Teacher extends Profession {
+    public Teacher(String name, String profession) {
+        super(name, profession);
+    }
 
+    Subject learn(Student student) {
+        Subject subject = new Subject("name");
+        return subject;
     }
 }

@@ -8,9 +8,12 @@ package ru.job4j.profession;
  * @since 0.1.
  */
 
-public class Patient extends Doctor{
-    /**
-     * @param поле name.
-     */
+public class Patient {
     private String name;
+    private String complaint;
+
+    public Patient(String name, String complaint) {
+        this.name = name;
+        this.complaint = complaint;
+    }
 }

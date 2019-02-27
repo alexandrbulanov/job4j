@@ -9,10 +9,12 @@ package ru.job4j.profession;
  */
 
 public class Doctor extends Profession {
-/**
- * метод Лечить пациента.
- */
-    public void treat(){
+    public Doctor(String name, String profession) {
+        super(name, profession);
+    }
 
+    Diagnosis treat(Patient patient) {
+        Diagnosis diagnosis = new Diagnosis("name");
+        return diagnosis;
     }
 }

@@ -9,10 +9,12 @@ package ru.job4j.profession;
  */
 
 public class Engineer extends Profession {
-    /**
-     * Метод строть дом.
-     */
-    public void build(){
+    public Engineer(String name, String profession) {
+        super(name, profession);
+    }
+
+    Project bild(House house) {
+        Project project = new Project("name");
+        return project;
     }
 }
-
